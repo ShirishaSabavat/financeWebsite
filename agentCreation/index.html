@@ -3,21 +3,13 @@
 
 <head>
   <title>Add Agents</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <style>
     body {
       font-family: "Lato", sans-serif;
     }
@@ -36,13 +28,13 @@
     .sidebar a {
       padding: 6px 8px 6px 16px;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 16px;
       color: white;
       display: block;
     }
 
     .sidebar a:hover {
-      color:tomato;
+      color: tomato;
     }
 
     .main {
@@ -50,7 +42,8 @@
       /* Same as the width of the sidenav */
       padding: 0px 10px;
     }
-    label{
+
+    label {
       font-size: small;
     }
 
@@ -59,7 +52,7 @@
         padding-top: 15px;
       }
     }
-    
+
     h4 {
       color: slateblue;
       text-align: center;
@@ -68,7 +61,7 @@
       margin-top: 8px;
     }
 
-    .container{
+    .container {
       width: 70%;
     }
   </style>
@@ -77,7 +70,7 @@
 <body>
 
   <div class="sidebar bg-dark">
-    <a href="index.html" class="bg-light p-2" style="margin-top:-15px; font-size: 20px;"> <img src="../images/logo1.png" width="42px" height='42px' ></img> <span class="text-dark font-weight-bold">Finance App</span></a>
+    <a href="../index.html" class="bg-light p-2" style="margin-top:-15px; font-size: 20px;"> <img src="../images/logo1.png" width="42px" height='42px' class="rounded" ></img> <span class="text-dark font-weight-bold">Finance App</span></a>
     <a href="../dashboard.html"><i class="fa fa-fw fa-tasks"></i> Dashboard</a>
     <a href="../businesprofile.html"><i class="fa fa-fw fa-bank"></i> Busines Profile</a>
     <a href="../loantype.html"><i class="fa fa-fw fa-book"></i> Loan Type</a>
@@ -87,45 +80,45 @@
     <a href="../loans.html"><i class="fa fa-fw fa-credit-card"></i> Loans</a>
     <a href="../investment.html"><i class="fa fa-fw fa-money"></i> Investment</a>
   </div>
+
   <div class="main">
-    <div class="container shadow my-5 p-4">
+    <div class="p-2 bg-dark" style="margin-left: -10px; margin-right: -10px;">
+      <h4 class="text-white font-weight-bold text-left">Create Account For Agents</h4>
+    </div>
+    <div class="container my-5">
       <div class="row">
-        <div class="col-12  d-flex flex-row justify-content-center">
-          <form class="row">
-            <div class="bg-dark" style="margin-left: -10px; margin-right: -10px; margin-bottom: 10px; padding: 12px;">
-              <h4 class="text-white font-weight-bold text-left">Create Account For Agent</h4>
+        <div class="col-12 p-4 card shadow d-flex flex-row justify-content-center">
+          <form class="row card-body mb-3 p-0">
+            <div class="col-md-6 mb-3 input-group-sm">
+              <label for="fullName" name="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" required>
             </div>
             <div class="col-md-6 mb-3 input-group-sm">
-              <label for="companyName" name="full_name">Full Name</label>
-              <input type="text" class="form-control" id="companyName" required>
+              <label for="emailId" name="emailId">Email Id</label>
+              <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp" required>
             </div>
             <div class="col-md-6 mb-3 input-group-sm">
-              <label for="exampleInputEmail1" class="form-label text-secondary" name="email_id">Email Id</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <label for="password" name="password">Password</label>
+              <input type="password" class="form-control" id="password" required>
             </div>
             <div class="col-md-6 mb-3 input-group-sm">
-              <label for="exampleInputPassword1" class="form-label text-secondary" name="password">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" required>
+              <label for="phnNo" name="phnNo">Phone Number</label>
+              <input type="number" class="form-control" id="phnNo" required>
             </div>
             <div class="col-md-6 mb-3 input-group-sm">
-              <label for="phnNumber" class="form-label text-secondary" name="phone_number">Phone Number</label>
-              <input type="number" class="form-control" id="phnNumber" required>
-            </div>
-            <div class="col-md-6 mb-3 input-group-sm">
-              <label for="aadharNumber" class="form-label text-secondary" name="aadhar_number">Aadhar Number</label>
-              <input type="number" class="form-control" id="aadharNumber" required>
+              <label for="aadharNo" name="aadharNo">Aadhar Number</label>
+              <input type="number" class="form-control" id="aadharNo" required>
             </div>
             <div class="col-lg-6 mb-3 input-group-sm">
-              <label for="photo" class="form-label text-secondary" name="photo">Photo</label>
-              <input class="form-control" type="file" id="photo" required>
+              <label for="personPhoto" name="personPhoto">Photo</label>
+              <input class="form-control" type="file" id="personPhoto" required>
             </div>
-            <div class="col-lg-6 mb-3 input-group-sm">
-              <label for="address" class="form-label text-secondary" name="address">Address</label>
+            <div class="col-lg-10 mb-3 input-group-sm">
+              <label for="address" name="address">Address</label>
               <textarea class="form-control" id="address" required></textarea>
             </div>
-            <div class="d-flex flex-row justify-content-center">
-              <div>
-                <a type="buton" href="../agent.html" class="btn btn-secondary">Back</a>
+            <div class="col-12 d-flex flex-row justify-content-center">              
+                <a type="buton" href="../agent.html" class="btn btn-secondary mr-2">Back</a>
                 <button type="submit" class="btn btn-primary">Create</button>
               </div>
             </div>
@@ -135,4 +128,5 @@
     </div>
   </div>
 </body>
+
 </html>

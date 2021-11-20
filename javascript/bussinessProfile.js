@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/bussiness-profile").then(bussinessData => {
+fetch("https://financeapp.koushilmankali.com/bussiness-profile").then(bussinessData => {
     return bussinessData.json();
 }).then(data => {
     console.log(data);

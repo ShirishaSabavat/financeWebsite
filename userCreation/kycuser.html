@@ -15,37 +15,55 @@
         crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      label{
+        font-size: small;
+      }
+      button{
+        margin-right: 10px;
+      }
+      h4 {
+      color: white;
+      text-align: center;
+      margin-bottom: 12px;
+      font-family: monospace;
+      margin-top: 8px;
+    }
 
+    </style>
 </head>
 <body>
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-12 d-flex flex-row justify-content-center">
-                <form class="row">
-                    <h3 class="text-center text-primary">KYC Details</h3>
+            <div class="col-12 card w-75 d-flex flex-row justify-content-center">
+                <form class="row shadow p-0 pb-4 card-body">
+                  <div class="bg-dark" style="margin-bottom: 10px; padding: 12px;">
+                  <h4>KYC Details</h4>
+                </div>
                     <div class="mb-3 input-group-sm">
-                        <label for="photo" class="form-label text-secondary" name="photo">Photo</label>
+                        <label for="photo" name="photo">Photo</label>
                         <input class="form-control" type="file" id="photo">
                       </div>    
                 
                     <div class="col-md-6 mb-3 input-group-sm">
-                        <label for="panNumber" class="form-label text-secondary" name="pan_number" required>PAN Number</label>
+                        <label for="panNumber" name="pan_number" required>PAN Number</label>
                         <input type="number" class="form-control" id="panNumber">
                       </div>
                       <div class="col-md-6 mb-3 input-group-sm">
-                        <label for="companyLogo" class="form-label text-secondary" name="PAN_card_photo" required>PAN Card Photo</label>
+                        <label for="companyLogo" name="PAN_card_photo" required>PAN Card Photo</label>
                         <input class="form-control" type="file" id="companyLogo">
                       </div>
                     <div class="col-md-6 mb-3 input-group-sm">
-                        <label for="aadharNumber" class="form-label text-secondary" name="aadhar_number" required>Aadhar Number</label>
+                        <label for="aadharNumber" name="aadhar_number" required>Aadhar Number</label>
                         <input type="number" class="form-control" id="aadharNumber">
                       </div>
                       <div class="col-md-6 mb-3 input-group-sm">
-                        <label for="companyLogo" class="form-label text-secondary" name="company_logo" required>Aadhar Card Photo</label>
+                        <label for="companyLogo" name="company_logo" required>Aadhar Card Photo</label>
                         <input class="form-control" type="file" id="companyLogo">
                       </div>
-                      <div class="d-flex flex-row justify-content-center">
-                        <button type="submit" class="btn btn-primary w-25">Proceed</button>
+                      <div class="d-flex flex-row justify-content-center mt-3">
+                        <button class="btn btn-secondary">Back</button>
+                        <button type="submit" class="btn btn-primary">Proceed</button>
                       </div>
                     
                     </form>

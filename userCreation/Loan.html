@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -14,32 +15,54 @@
         crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        label {
+            font-size: small;
+        }
 
-    </head>
-    <body>
-        <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-12  d-flex flex-row justify-content-center">
-                    <form class="row">
-                        <h3 class="text-center text-primary mb-5">Loan Details</h3>
-                        <div class="col-md-4 mb-3 input-group-sm">
-                            <label for="loanAmount" class="form-label text-secondary" name="loan_amount">Loan Amount</label>
-                            <input type="number" class="form-control" id="loanAmount">
-                          </div>
-                        <div class="col-md-4 mb-3 input-group-sm">
-                            <label for="interest" class="form-label text-secondary" name="interest">Interest</label>
-                            <input type="number" class="form-control" id="interest">
-                          </div>
-                        <div class="col-md-4 mb-3 input-group-sm">
-                            <label for="noOfDays" class="form-label text-secondary" name="no_of_days">Number of Days</label>
-                            <input type="number" class="form-control" id="noOfDays">
-                          </div>
-                          <div class="d-flex flex-row justify-content-center">
-                            <button type="submit" class="btn btn-primary w-25">Save</button>
-                          </div>
-                        </form>
-                </div>
+        button {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        h4 {
+            color: white;
+            text-align: center;
+            margin-bottom: 12px;
+            font-family: monospace;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 card w-75 d-flex flex-row justify-content-center">
+                <form class="row card-body p-0 pb-3 shadow">
+                    <div class="bg-dark" style="margin-bottom: 10px; padding: 12px;">
+                        <h4>Loans</h4>
+                    </div>
+                    <div class="col-md-4 mb-3 input-group-sm">
+                        <label for="loanAmount" name="loan_amount">Loan Amount</label>
+                        <input type="number" class="form-control" id="loanAmount">
+                    </div>
+                    <div class="col-md-4 mb-3 input-group-sm">
+                        <label for="interest" name="interest">Interest</label>
+                        <input type="number" class="form-control" id="interest">
+                    </div>
+                    <div class="col-md-4 mb-3 input-group-sm">
+                        <label for="noOfDays" name="no_of_days">Number of Days</label>
+                        <input type="number" class="form-control" id="noOfDays">
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <button class="btn btn-secondary">Back</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

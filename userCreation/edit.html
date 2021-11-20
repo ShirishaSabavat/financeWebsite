@@ -57,14 +57,18 @@
         .container {
             width: 70%;
         }
+
+        label {
+            font-size: small;
+        }
     </style>
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="index.html" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span
-                class="nav_logo-name">Finance
-                App</span> </a>
+    <div class="sidebar bg-dark">
+        <a href="index.html" class="bg-light p-2" style="margin-top:-15px; font-size: 20px;"> <img
+                src="../images/logo1.png" width="42px" height='42px'></img> <span
+                class="text-dark font-weight-bold">Finance App</span></a>
         <a href="../dashboard.html"><i class="fa fa-fw fa-tasks"></i> Dashboard</a>
         <a href="../businesprofile.html"><i class="fa fa-fw fa-bank"></i> Busines Profile</a>
         <a href="../loantype.html"><i class="fa fa-fw fa-book"></i> Loan Type</a>
@@ -79,47 +83,36 @@
 
         <div class="container shadow p-4 my-5">
             <h3 class="text-center text-primary mb-5">Edit Client Details</h3>
-            <div class="col-12  d-flex flex-row justify-content-center">
+            <div class="col-12 d-flex flex-row justify-content-center">
                 <form class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="companyName" class="form-label col-form-label-sm text-secondary"
-                            name="full_name">Full
-                            Name</label>
-                        <input type="text" class="form-control form-control-sm" id="companyName" required>
+                        <label for="fullName" name="fullName">FullName</label>
+                        <input type="text" class="form-control form-control-sm" id="fullName" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="exampleInputPassword1" class="form-label col-form-label-sm text-secondary"
-                            name="password">Password</label>
-                        <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" required>
+                        <label for="password" name="password">Password</label>
+                        <input type="password" class="form-control form-control-sm" id="password" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="exampleInputEmail1" class="form-label col-form-label-sm text-secondary"
-                            name="email_id">Email
-                            Id</label>
-                        <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                        <label for="emailId" name="emailId">Email Id</label>
+                        <input type="email" class="form-control form-control-sm" id="emailId"
                             aria-describedby="emailHelp" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="phnNumber" class="form-label col-form-label-sm text-secondary"
-                            name="phone_number">Phone
-                            Number</label>
-                        <input type="number" class="form-control form-control-sm" id="phnNumber" required>
+                        <label for="phnNo" name="phnNo">Phone Number</label>
+                        <input type="number" class="form-control form-control-sm" id="phnNo" required>
                     </div>
                     <div class="col-md-6 mb-3 ">
-                        <label for="address" class="form-label col-form-label-sm text-secondary"
-                            name="address">Address</label>
+                        <label for="address" name="address">Address</label>
                         <textarea class="form-control form-control-sm" id="address" required></textarea>
                     </div>
                     <div class="col-md-6 mb-3 ">
-                        <label for="referrence" class="form-label col-form-label-sm text-secondary"
-                            name="referrence">Referrence</label>
+                        <label for="referrence" name="referrence">Referrence</label>
                         <input type="text" class="form-control form-control-sm" id="referrence" required>
                     </div>
-                    <div class="d-flex flex-row justify-content-center">
-                        <div>
-                            <a type="button" class="btn btn-secondary" href="../user.html">Back</a>
-                            <button type="submit" class="btn btn-primary">Edit</button>
-                        </div>
+                    <div class="col-12 d-flex flex-row justify-content-center">
+                        <a type="buton" href="../user.html" class="btn btn-secondary mr-2">Back</a>
+                        <button type="submit" class="btn btn-primary">Update</button>
                     </div>
                 </form>
             </div>
@@ -127,4 +120,5 @@
 
     </div>
 </body>
+
 </html>
